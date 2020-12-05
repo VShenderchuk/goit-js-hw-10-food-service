@@ -1,5 +1,5 @@
-//import menuCard from './templates/menu-card.hbs';
-//import menu from './menu.json';
+import menuCard from './templates/menu-card.hbs';
+import menu from './menu.json';
 import './styles.css'; 
 
 const Theme = {
@@ -32,7 +32,7 @@ if (savedTheme === Theme.DARK) {
 }
 
 
-//const menuContainer = document.querySelector('.js-menu');
-//const menuCards = menuCard(menu);
+const menuContainer = document.querySelector('.js-menu');
+const menuCards = menuCard(menu);
 //console.log(menuCards);
-//menuContainer.insertAdjacentHTML('beforeend', menuCards);
+menuContainer.insertAdjacentHTML('beforeend', menuCards);
